@@ -1,0 +1,66 @@
+/* Page styles
+-------------------------------*/
+
+.box1 {
+	display: none;
+}
+
+body {
+	background-color: #ADB4C4;
+}
+
+h1 {
+	font-size: 2.5em;
+	margin: 1em;
+	text-align: center;
+}
+
+
+
+/* Tab styles
+-------------------------------*/
+
+section.tab-wrap {
+	width: 700px;
+	margin: 0 auto;
+}
+
+ul.tabs {
+	overflow: hidden;
+	zoom: 1; /* IE 6-7 */
+}
+
+ul.tabs li {
+	display: block;
+	list-style-type: none;
+	margin: 0 .5em 0 0;
+	padding: 0;
+	float: left;
+}
+
+ul.tabs li a {
+	display: block;
+	color: black;
+	background-color: #CCCCCC;
+	border: 1px solid #CCCCCC;
+	text-decoration: none;
+	padding: .25em .5em;
+	text-align: center;
+}
+
+ul.tabs li a.current {
+	color: black;
+	background-color: white;
+	border: 1px solid white;
+}
+
+section.tab-section {
+	padding: 1em 2em;
+	background-color: white;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+
+

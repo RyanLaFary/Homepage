@@ -1,0 +1,81 @@
+
+/* ATTRIBUTE SELECTORS
+-----------------------------------*/
+
+a[href$=".pdf"] {
+	background-image: url(icon_pdf.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	padding-right: 20px;
+}
+
+a[href^="http://"] {
+	background-image: url(icon_external.png);
+	background-repeat: no-repeat;
+	background-position: center right;
+	padding-right: 15px;
+}
+
+a[href^="mailto"] {
+	background-image: url(icon_mail.gif);
+	background-repeat: no-repeat;
+	background-position: center left;
+	padding-left: 20px;
+}
+
+a[href*="twitter"] {
+	background-image: url(icon_twitter.png);
+	background-repeat: no-repeat;
+	background-position: center left;
+	padding-left: 20px;
+}
+
+/* PSEUDO CLASSES 
+-----------------------------------*/
+
+section.pseudo li:first-child {
+	background-color: silver;
+}
+
+section.pseudo li:last-child {
+	background-color: wheat;
+}
+
+section.pseudo p:first-of-type {
+	color: green;
+}
+
+section.pseudo p:first-of-type:first-letter {
+	font-size: 200%
+}
+
+/* SYNTAX 
+-----------------------------------*/
+.syntax {
+	float: right;
+	width: 275px;
+	background-color: #EDEDED;
+	padding: .5em 1em;
+	margin: 0 0 1em 2em;
+	border: 1px solid silver;
+	box-shadow: inset 2px 2px 15px black;
+	border-radius: 25px;
+}
+
+
+dt {
+	margin-top: 1em;
+	font-weight: bold;
+	font-size: 140%;
+}
+
+dd {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin-bottom: .5em;
+}
+
+

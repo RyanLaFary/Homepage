@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Basic Tabs with jQuery</title>
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="styles.css">	
+<script src="jquery-1.9.1.min.js"></script>
+
+</head>
+
+<body>
+<header>
+	<h1>Basic Tabs with jQuery</h1> 
+</header>
+
+<section class="tab-wrap">
+
+<nav>
+	<ul class="tabs">
+		<li><a href="#description">Description</a></li>
+		<li><a href="#photos">Photos</a></li>
+		<li><a href="#details">Details</a></li>
+		<li><a href="#reviews">Customer Reviews</a></li>
+		<li><a href="#related">Related Items</a></li>
+	</ul>
+</nav>
+
+<section id="description" class="tab-section">
+  <h2>Overview</h2>
+  <p>This section contains a basic overview of our product.</p>
+</section><!-- description -->
+
+<section id="photos" class="tab-section">
+  <h2>Photos</h2>
+  <p>This section contains additional photos of our product.</p>
+</section><!-- photos -->
+
+<section id="details" class="tab-section">
+  <h2>Details</h2>
+  <p>This is where we list out all the details of our product—size, weight, color, etc.</p>
+</section><!-- details -->
+
+<section id="reviews" class="tab-section">
+  <h2>Customer Reviews</h2>
+  <p>Here's where we would list all of the glowing reviews our customers had written</p>
+</section><!-- reviews -->
+
+<section id="related" class="tab-section">
+  <h2>Related Items</h2>
+  <p>And here we would list out other items that our customers might also like to buy.</p>
+</section><!-- related -->
+
+</section><!-- tab-wrap -->
+	
+	
+<script>
+	
+	$(document).ready(function(){
+		$('.tab-section').hide();
+		$('.tabs a').bind('click', function(nolink){
+			$('.tabs a.current').removeClass('current');
+			$('.tab-section:visible').hide();
+			$(this.hash).show();
+			$(this).addClass('current');
+			nolink.preventDefault;
+		}).filter(':first').click();
+	});
+	
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

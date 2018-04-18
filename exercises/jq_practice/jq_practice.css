@@ -1,0 +1,71 @@
+
+/* jQuery Practice Exercise #1 
+----------------------------------------*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color:#E4E3E3;
+}
+
+#change_me {
+	position: absolute;
+	top: 100px;
+	left: 400px;
+	background-color: whitesmoke;
+	padding: 1em;
+	border: 1px solid slategray;
+	border-radius: 20px;
+}
+
+nav#button_bar {
+	text-align: center;
+	border-bottom: 1px solid slategray;
+	margin-bottom: .5em;
+}
+
+
+
+
+
+/* jQuery Practice Exercise #2 
+----------------------------------------*/
+
+section.gallery {
+	background-color: slategray;
+	border: 1px solid #AAAAAA;
+	padding: 3em;
+	border-radius: 15px;
+	max-width: 1010px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: inset 4px 4px 10px black;
+	text-align: center;
+}
+
+section.gallery img {
+	border: 10px solid white;
+	box-shadow: 0 7px 7px -3px black;
+	margin-right: 20px;
+	width: 250px;
+	height: 250px;
+}
+
+section.gallery img:last-of-type {
+	margin-right: 0;
+}
+
+.tooltip {
+	display:none;
+	position:absolute;
+	border:1px solid #333333;
+	background-color:#161616;
+	border-radius: 5px;
+	padding: .75em;
+	color: white;
+	font-size: 80%;
+}
+	

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Drawers</title>
+<link href="reset.css" rel="stylesheet">
+<link href="drawer.css" rel="stylesheet">
+<script src="jquery-3.js"></script>
+</head>
+
+<body>
+
+<div class="drawer">
+<h2><a href="#">JavaScript</a></h2>
+
+<div class="inner">
+<p>JavaScript is a scripting language widely used for client-side web development. It was the originating dialect of the ECMAScript standard. It is a dynamic, weakly typed, prototype-based language with first-class functions. JavaScript was influenced by many languages and was designed to look like Java, but be easier for non-programmers to work with.</p>
+
+<p>JavaScript, despite the name, is essentially unrelated to the Java programming language, although both have the common C syntax, and JavaScript copies many Java names and naming conventions. The language's name is the result of a co-marketing deal between Netscape and Sun, in exchange for Netscape bundling Sun's Java runtime with their then-dominant browser. The key design principles within JavaScript are inherited from the Self and Scheme programming languages.</p>
+</div><!-- inner -->
+</div><!-- drawer -->
+
+<div class="drawer">
+<h2><a href="#">jQuery</a></h2>
+
+<div class="inner">
+<p>jQuery is a lightweight, "write less, do more" JavaScript library. The purpose of jQuery is to make it much easier to use JavaScript on your website.</p>
+
+<p>jQuery is not a seperate language. It takes a lot of common tasks that would require many lines of JavaScript code to accomplish, and has them pre-programmed as part of the library. It's a fast, small, and feature-rich JavaScript library that lets you do very complex things (relatively) simply! It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.</p>
+	
+You can download the source code from the <a href="http://www.jquery.com">jQuery website</a> and learn its basic features on websites like <a href="https://css-tricks.com/lodge/learn-jquery/">CSS Tricks</a>	
+</div><!-- inner -->
+</div><!-- drawer -->
+
+
+<script>
+	$("div.drawer").click(function() {
+		$(this).find(".inner").slideToggle("slow");
+	});;
+</script>	
+
+
+</body>
+</html>

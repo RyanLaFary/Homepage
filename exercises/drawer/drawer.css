@@ -1,0 +1,63 @@
+/*
+Site:	JavaScript Drawers
+*/
+
+/* GLOBAL STYLES
+---------------------------- */
+
+body {
+	background-color: #FFFFFF;
+	padding: 1em 3em;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* DRAWER
+---------------------------- */
+
+.drawer {
+	margin-bottom: 1em;
+	border: 2px solid black;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	width: 400px;
+}
+
+
+.drawer a {
+	padding: 1em;
+	display: block;
+}
+
+
+.drawer a:hover {
+	background-color: #999999;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+
+
+
+/* INNER DRAWER
+---------------------------- */
+
+.inner {
+	background-color: #EEEEEE;
+	line-height: 130%;
+	font-size: .9em;
+	padding: 1em 2em;
+	box-shadow: inset 0px 0px 15px black;
+	display: none;
+	
+}
+
+.inner a,
+.inner a:hover {
+	padding: 0;
+	background-color: #EEEEEE;
+	
+}

@@ -1,0 +1,348 @@
+/*---------------------------------------
+   SITE:		
+   AUTHORS:	
+---------------------------------------*/
+
+
+
+
+/* GLOBAL SETTINGS
+---------------------------------------*/
+* {
+	box-sizing: border-box;
+}
+body {
+background-color: #000000;
+}
+	
+#wrapper {
+	width: 960px; 
+	margin: 1em auto 0 auto;
+	background-color: rgba(255,255,255,.8);
+	border: inset;
+}
+
+
+
+/* HEADER
+---------------------------------------*/
+	
+header {
+	position: relative;
+	font-family: 'Crimson Text', serif;
+	background-color: #CB0400;
+	padding: 20px;
+	color: white;
+	box-shadow: inset 2px 2px 15px black;
+}
+
+
+header h1 {
+	font-weight: 900;
+	font-size: 250%;
+}
+
+header h2 {
+	font-weight: 400;
+	font-size: 95%;
+}
+
+
+
+/* MAIN NAVIGATION 
+---------------------------------------*/	
+
+nav.topnav {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	padding-top: 15px;
+	
+}
+
+nav.topnav li {
+	display: inline;
+	line-height: 2em;
+}
+
+nav.topnav a {
+	padding: .5em 2em;
+	display: inline;
+	color: white;
+	font-size: 110%;
+	text-decoration: none;
+}
+
+nav a {
+	background-color: #CB0400;
+	transition: background-color .5s ease;
+	border-radius: 10px;
+}
+
+nav a:hover {
+	background-color: #000000;
+	border-radius: 10px;
+}
+nav li a:hover {
+	color: #000000;
+	background-color: #000000;
+}
+
+
+/* FEATURE AREA 
+---------------------------------------*/	
+section.feature_area {
+	overflow: hidden;	/* wraps around floated child elements */
+	margin: 1em 0; /* space between header and feature area */
+	color: white;
+	font-size: 150%;
+}
+
+article.blog {
+	float: left;
+	width: 620px;
+	padding-left: 25px;
+}
+
+article.blog h2 { /* blog headline */
+	font-family: 'Crimson Text', serif;
+	font-size: 120%;
+	padding-bottom: 15px;
+	color: #CB0400;
+	
+}
+
+article.blog p { /* blog text */
+	font-size: 90%;
+	color: black;
+
+}
+
+
+section.feature_area aside { /* BOTH recent and links */
+	width: 300px;
+	float: right;
+}
+
+section.feature_area aside.recent {
+	color: #CB0400
+}
+
+section.feature_area aside.links {
+	color: #CB0400;
+}
+
+section.feature_area ul {
+	margin: 0 0 0 1.5em; 
+	padding: .6em 0em .75em 0; 		
+}
+
+.feature_area h3 { /* navigation labels */
+	padding: 0 .5em;	
+}
+
+
+.feature_area  li a { /* links in the aside navigation */
+	text-decoration:none; /* removes default underline */
+	font-size: 90%;
+	color: black;
+	
+}
+
+.feature_area  li a:hover {
+	color: #000000;
+	background-color: white;
+}
+
+
+/* CAMPUS AREA
+---------------------------------------*/
+.campus	{
+	clear: both; /* moves below previous floats */
+	margin: 1em 0 2em 0; /* separation from feature & footer */
+	overflow: hidden; /* encloses floated elements */
+	color: white;
+	font-size: 115%;
+}	
+
+.campus section { /* all 4 columns for the buildings */
+	width: 24%;
+	float: left;
+	margin: 0 .5%;
+	padding: .5em;
+	text-align: center;
+	color: #CB0400;
+	font-size: 120%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.campus section figcaption {
+	font-size: 80%;
+}
+
+
+
+/* FOOTER
+---------------------------------------*/
+
+footer {
+	padding:.5em 0 .35em 0; 
+	font-size: 100%;
+	color: black;
+	text-align: center;
+}
+
+footer p { 
+
+}
+
+
+/* TOOLS
+---------------------------------------*/
+
+a[href^="http://"] {
+	background-image: url(../images/icon_external.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	padding-right: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+
+
+/* TABLET
+---------------------------------------*/
+@media only screen and (max-width : 768px ){
+	#wrapper {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 0;
+	}
+	header {
+		font-size: 100%;
+		background-image: none;
+		background-color: #CB0400;
+	}
+	h1 {
+		margin: 0;
+	}
+	nav {
+		padding-right: 15px;
+		font-size: 50%;
+	}
+	h2 {
+		font-size: 125%;
+	}
+	nav.topnav{
+		position: static;
+	}
+	nav.topnav a {
+		font-size: 200%;
+		margin-left: 2.5em;
+	}
+	
+	section.feature_area aside.recent {
+		margin-right: 2em;
+	}
+	
+	section.feature_area aside.links {
+		margin-right: 2em;
+	}
+	article {
+		margin-left: 1.7em;
+	}
+}
+
+
+
+
+/* PHONE
+---------------------------------------*/
+
+@media only screen and (max-width: 480px)  {
+	
+	section.feature_area aside.recent {
+		margin-right: 2em;
+		display: none;
+	}
+	
+	section.feature_area aside.links {
+		margin-right: 2em;
+		display: none;
+	}
+
+	nav.topnav {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	nav.topnav ul {
+		list-style-type: none;
+		
+
+	}
+	
+	nav.topnav li {
+		border-top: thin;
+	}
+	
+	nav.topnav li a {
+		display: block;
+		padding: .5em;
+		margin: 0;
+		color: white;
+		font-size: 200%;
+		text-decoration: none;
+	}
+	
+	nav li a:hover {
+	color: #000000;
+	background-color: #000000;
+		
+	}
+	
+	
+	.feature_area {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		line-height: normal;
+	}
+	
+	article {
+		margin-left: -.5em;
+	}
+	
+	.campus section img {
+		float: left;
+		margin-right: 1em;
+		margin-top: -20px;
+	}
+	
+	.campus section figcaption {
+		text-align: left;
+		
+	}
+	.campus section {
+		margin: 0;
+		overflow: hidden; 
+		clear: both;
+		width: 100%;
+	}
+	
+	
+	
+	
+}
+	
+	
+	
+	
+	
+

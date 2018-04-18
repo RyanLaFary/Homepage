@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Practice #1 - Changing Elements</title>
+	<link href="jq_practice.css" rel="stylesheet">
+	<script src="jquery-3.1.1.min.js"></script>
+
+    
+</head>
+
+<body>
+<nav id="button_bar">
+	<button id="move_up">Move Up</button>
+	<button id="move_down">Move Down</button>
+	<button id="color">Change Color</button>
+	<button id="disappear">Disappear/Re-appear</button>
+</nav><!-- button_bar -->
+
+<div id="change_me">
+	<h1>Make me do stuff!</h1>
+</div><!-- change_me -->
+
+
+<script>
+$(document).ready(function() {
+	$("#move_up").click(function() {
+		$("#change_me").animate({top:50},2000);
+	}); //end move_up
+	
+	$("#move_down").click(function() {
+		$("#change_me").animate({top:500},2000);
+	}); //end move_down
+	
+	$("#color").click(function() {
+		$("#change_me").css("background-color","black");
+		$("#change_me").css("color","white");
+		$("#change_me").css("width","10em");
+	}); //end color
+	
+	$("#disappear").click(function() {
+		$("#change_me").slideToggle(1000);
+	}); //end disappear
+	
+});//end doc ready
+	
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+body {
+	background-color:#B5D5FF;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 2em auto;
+	border: 1px solid black;
+	background-color: white;
+}
+
+header {
+	font-size: 175%;
+	text-align: center;
+	padding: 1em;
+}
+
+
+.tips {
+	clear: both;
+	padding:2em;
+}
+
+h2 {
+	font-size: 150%;
+	border-bottom: 1px solid black;
+	margin-bottom: .5em;
+}
+
+li {
+	margin: 0 0 .75em 2em;
+	font-size: 120%;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+	padding: 1em;
+}
+
+/* COLUMN EXERCISE
+----------------------------------------------------*/
+
+.column {
+	background-color: khaki;
+	float: left;
+	width: 30%;
+	/* border: 1px solid silver; */
+	margin: 0 1.5%;
+	box-sizing: border-box;
+	padding: 15px;
+
+}
+
+
+
+
+
+
+/* FUN STUFF EXERCISE
+----------------------------------------------------*/
+
+article.fun-stuff {
+	margin-top: 2em;
+	border-top: 2px dotted silver; 
+}
+
+.fun-stuff .column {
+	float: left;
+	width: 30%;
+	border: 1px solid black;
+	padding: 20px;
+	margin: 0 1.5%;
+	box-sizing: border-box;
+	color: white;
+}
+
+.fun-stuff h2 {
+	margin-bottom: 1em;
+}
+
+
+/* GRADIENTS
+----------------------------------------------------*/
+
+.linear {
+	background: linear-gradient(315deg, red, black);
+}
+
+.radial {
+	background: radial-gradient(blue, 70%, black);
+}
+
+.transition {
+	background: grey;
+	transition: all .25s ease;
+}
+
+.transition:hover{
+	border-radius: 3em;
+	background: black;
+	transform: rotate(10deg);
+	font-size: 150%;
+	text-align: center;
+} 
+
+
+
+
+/* BUTTON
+----------------------------------------------------*/
+
+a.button {
+	background: linear-gradient(red, #4D0808);
+	border-radius: 3em;
+	padding: .75em 1.5em;
+	color: white;
+	text-decoration: none;
+	transition: all 1s ease;
+	border: 1px solid silver;
+}
+
+a.button:hover {
+	box-shadow: 2px 2px 5px black;
+	color: white;
+}
+
+
+
+

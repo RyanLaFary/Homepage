@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Practice #2 - Tooltips</title>
+    <link href="jq_practice.css" rel="stylesheet">
+	<script src="jquery-3.1.1.min.js"></script>
+    
+
+    
+</head>
+
+<body>
+
+    
+<section class="gallery">
+
+    <img src="tiger.jpg" alt="Tiger" class="tooltip-image"
+	title="Tiger enjoying some catnip">
+    
+    <img src="penny.jpg" alt="Penny" class="tooltip-image"
+	title="Penny enjoying some warm laundry">
+    
+    <img src="ivan.jpg" alt="Ivan" class="tooltip-image"
+	title="Ivan the big-jowled kitty">
+
+</section><!-- gallery -->
+
+<script>
+	$(document).ready(function() {
+		$(".tooltip-image").hover(function(){
+			var title = $(this).attr("title");
+			$(this).data("tip-text", title).removeAttr("title");
+			$('<p class="tooltip"></p')
+			.text(title)
+			.appendTo("body")
+			.fadeIn("slow");
+		},
+								  
+		function() {
+			$(this).attr("title", $(this).data("tip-text"));
+			$(".tooltip").remove();
+			
+		}).mousemove(function(e) { //tooltip location
+		var mouse_x = e.pageX + -100; //X coordinates
+		var mouse_y = e.pageY + 10; //Y coordinates
+		$(".tooltip").css({ top: mouse_y, left: mouse_x })
+		}); //end tooltip-image
+	}); //end doc ready
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Three columns and other cool stuff</title>
+	<meta charset="utf-8">
+	<link href="reset.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="wrapper">
+
+<article class="box-model">
+<header>
+	<h1>Three Columns on a web page!</h1>
+</header>
+
+<section class="column">
+	<p>I'm a section that is 30% wide, floated left, and has a 1.5% margin on the left and right!</p>
+</section>
+
+<section class="column">
+	<p>I'm a section that is 30% wide, floated left, and has a 1.5% margin on the left and right!</p>
+</section>
+
+<section class="column">
+	<p>I'm a section that is 30% wide, floated left, and has a 1.5% margin on the left and right!</p>
+</section>
+
+<section class="tips">
+	<h2>Things to remember:</h2>
+    <ul>
+      <li>Use the <code><b>box-sizing:border-box;</b></code> property on your columns!</li>
+		<li>If you want the entire page to use border box you can use the universal selector as the <u>first style rule:</u><br>
+      <code><b>* {box-sizing: border-box;} </b></code>
+      <li>The width + margin of all three columns must total less than 100%!</li>
+      
+    </ul>
+  </section>
+
+<footer>
+	<small>Note: If we don't use border-box the actual width of boxes will be determined by width + padding + border + margin</small>
+</footer>
+</article>
+
+<article class="fun-stuff">
+<header>
+	<h1>Fun New Stuff with CSS3!</h1>
+</header>
+
+<section class="column linear">
+	<p>Linear Gradient</p>
+</section>
+
+<section class="column radial">
+	<p>Radial gradient</p>
+</section>
+
+<section class="column transition">
+	<p>Transition<!--:<br>
+    <code>transition: property duration timing-function;</code>--></p>
+</section>
+
+<section class="tips">
+	<h2>Putting It All Together:</h2>
+		<a href="http://www.ucblueash.edu" class="button">UC Bearcat Button!</a>
+  </section>
+
+<footer>
+	<small>Note: These are new properties and some require browser prefixes!</small>
+</footer>
+</article>
+
+</div><!-- wrapper -->
+</body>
+</html>

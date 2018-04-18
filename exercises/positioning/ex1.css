@@ -1,0 +1,38 @@
+/* MAIN PAGE STYLES 
+--------------------------------------*/
+
+body {
+	background-color:#caebff;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+section.exercise p {
+	font-size: 24px;
+	color: #555555;
+	background-color: #ccc;
+	margin: 10px 0;
+	padding: 0.5em 0 .25em .5em;
+}
+
+.intro {
+	font-size: 120%;
+}
+
+
+/* CLASS EXERCISE
+--------------------------------------*/
+
+p#special {
+	color: red; 
+	background:#ffffff;
+	position: fixed;
+	top: 25px;
+	left: 30px;
+}
+
+section.exercise {
+	position: relative;
+}
+
+
+

@@ -1,0 +1,161 @@
+body {
+	background-color: #204B1E;
+	font-family: serif;
+}
+
+#wrapper {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border: 1px solid black;
+}
+
+header {
+	background-color: #BE0000;
+	background-image: url("images/bkg_header.png"); 
+	background-repeat: no-repeat;
+	background-position: center right;
+	padding: 20px;
+	color: white;
+}
+
+nav {
+	font-size: 130%;
+	background-color: #204B1E;
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline;
+	line-height: 2em;
+	margin-left: 2em;
+}
+
+nav li a {
+	color: #BE0000;
+	padding: 7px;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	color: #BE0000;
+	background-color: #193818;
+	padding: 7px;
+}
+
+#main {
+	background-color: white;
+	font-size: 100%;
+	line-height: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+#main h2 {
+	font-size: 2em;
+	color: #BE0000;
+	border-bottom: 100px;
+}
+
+footer {
+	clear: both;
+	background-color: #BE0000;
+	border-top: 15px;
+	text-align: center;
+	font-size: 50%;
+	color: white;
+	padding: 5px;
+}
+
+.pic-center {
+	display: block;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	margin-bottom: 9px;
+	border-bottom: 20%;
+}
+
+h3 {
+	font-size: 175%;
+	padding-bottom: 5px;
+}
+
+h4 {
+	font-size: 150%;
+	border-bottom: 1px solid #ae3777;
+}
+
+h5 {
+	padding-top: 10px;
+	border-bottom: 1px solid #ae3777;
+	font-size: 150%;
+}
+
+h6 {
+	font-size: 150%;
+	border-bottom: 1px solid #ae3777
+}
+
+p {
+	padding-top: 10px;
+}
+
+.pic-room {
+	float: right;
+	margin-bottom: 2em;
+	margin-left: 1em;
+}
+
+#left-column {
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	float: left;
+	width: 400px;
+	margin-left: 1em;
+}
+
+#left-column li {
+	margin-left: 1em;
+}
+
+#right-column li {
+	margin-left: 1em;
+}
+
+.pic-left {
+	border-image: 10px ivory;
+	box-shadow: 5px;
+	padding-bottom: 10px;
+}
+
+.pic-right {
+	border-image: 10px ivory;
+	box-shadow: 5px;
+	padding-bottom: 10px;
+}
+
+
+#right-column {
+	padding-top: 20px;
+	float: right;
+	width: 400px;
+}
+
+
+

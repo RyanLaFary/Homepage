@@ -1,0 +1,121 @@
+/* -----------------------
+Site: Personal Homepage
+Author: Ryan LaFary
+-------------------------- */
+
+/* Global Settings
+-------------------------- */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: serif;
+	background-color: grey;
+}
+
+#wrapper {
+	border: 15px;
+	padding: 20px;
+	box-shadow: 5px 5px 15px black;
+}
+
+div {
+    background-color: lightgrey;
+    width: 1140px;
+    border: 25px;
+    padding: 25px;
+    margin: 25px;
+}
+
+/* Header
+-------------------------- */
+
+header {
+	font-size: 200%;
+	text-align: left;
+	font-family: times;
+	padding: 15px;
+}
+
+header h2 {
+	font-size: 15px;
+}
+
+/* Main Article
+-------------------------- */
+
+#main {
+	background-color: blue;
+	margin: 15px;
+}
+
+
+
+/* Biography
+-------------------------- */
+
+figure {
+	float: right;
+	box-shadow: 2px 2px 5px black;
+	margin-right: 10px;
+	padding: 5px;
+	margin-left: 20px;
+}
+
+figcaption {
+	text-align: center;
+}
+
+p {
+	padding: 15px;
+}
+
+/* Examples
+-------------------------- */
+
+
+.examples {
+	text-decoration: none;
+	margin-left: 15px;
+}
+
+.work_old	 {
+	text-decoration: none;
+	background-color: black;
+	padding-left: 20px;
+}
+
+
+/* Resources
+-------------------------- */
+
+.resources {
+	margin-left: 15px;
+	text-decoration: none;
+}
+
+/* Footer
+-------------------------- */
+
+footer {
+	background-color: #8f8f8f;
+	clear: both;
+	text-align: center;
+	font-size: 75%
+	color: white;
+	padding: 15px;
+}
+
+.logo {
+	float: right;
+}
+
+a[href^="mailto"] {
+	background-image: url(icon_mail.gif);
+	background-repeat: no-repeat;
+	background-position: center left;
+	padding-left: 20px;
+
+/* Tools
+-------------------------- */

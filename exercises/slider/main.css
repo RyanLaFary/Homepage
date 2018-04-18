@@ -1,0 +1,148 @@
+
+/* GENERAL STYLES
+-----------------------------------*/
+
+body {
+	background-color:#B3AFB0;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Corbel, "DejaVu Sans", Verdana, sans-serif;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 960px;
+	background-color: #F7F6FB;
+}
+
+img.right {
+	float:right;
+	margin: 0 0 1em 1em;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+
+
+/* HEADER
+-----------------------------------*/
+#header {
+	text-align: center;
+	padding: 2em;
+	background-image: url(images/flowers/header.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+#header h1 {
+	color: #F7F6FB;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 0.2em;
+	font-size: 250%;
+}
+
+
+
+
+/* LEFT COLUMN
+-----------------------------------*/
+
+#left-column {
+	float: left;
+	width: 650px;
+	padding: .5em 0 1em 2em;
+	font-size: 125%;
+}
+#left-column h2 {
+	margin: .25em 0;
+	padding: 0;
+	border-bottom: 1px solid #9D4285;
+	color: #9D4285;
+	font-size: 125%;
+}
+
+
+
+
+/* RIGHT COLUMN
+-----------------------------------*/
+
+#right-column {
+	float: right;
+	width: 200px;
+	padding: .5em 1em 1em 1em;
+	font-size: 70%;
+	color: white;
+	background-color: #373609;
+}
+
+#right-column h2 {
+	text-align: center;
+	font-size: 150%;
+	margin: .25em 0 1em 0;
+}
+
+
+#right-column img {
+	display: block;
+	margin: 2em auto 5px auto;
+	background-color: #F7F6FB;
+	padding: 5px;
+}
+
+
+
+
+
+/* NAVIGATION
+-----------------------------------*/
+#nav {
+	background-color:  #D5CFC3;
+}
+
+#nav ul {
+	list-style-type: none;   
+	text-align: center;          
+	margin: 0;
+	padding: 0;
+}
+
+#nav li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+#nav li a {
+	text-decoration: none;
+	padding: .5em;
+	margin-right: 3em;
+	line-height: 2.5em;
+	color: #9D4285;
+	font-weight: bold;
+}
+
+
+#nav a:hover {
+	color: #FCC5FD;
+	background-color: black;
+}
+
+
+
+
+/* FOOTER
+-----------------------------------*/
+#footer {
+	clear: both;
+	background-color: #373609;
+	color: white;
+	font-size: 75%;
+	text-align: center;
+	padding: 1em 0 .5em 0;
+}

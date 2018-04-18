@@ -1,0 +1,29 @@
+
+body {
+	background-color:#caebff;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+div#outer {
+	width: 500px;
+	height: 300px;
+	margin:200px 40px; 
+	border:3px solid red;
+	background-color: white;
+	position: relative;
+
+}
+
+div#inner {
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif" ; 
+	background-color:#DDDDDD;
+	padding: .5em;
+	top: 10px;
+	left: 20px;
+	position: absolute;
+	width: 600px;
+	
+}

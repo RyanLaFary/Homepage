@@ -18,14 +18,16 @@ body {
 	border: 15px;
 	padding: 20px;
 	box-shadow: 5px 5px 15px black;
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
 }
 
 div {
     background-color: lightgrey;
-    width: 1140px;
     border: 25px;
-    padding: 25px;
-    margin: 25px;
+    /* padding: 25px; */
+    /* margin: 25px; */
 }
 
 /* Header
@@ -45,17 +47,28 @@ header h2 {
 /* Main Article
 -------------------------- */
 
-#main {
+main {
 	background-color: blue;
 	margin: 15px;
+	overflow: hidden;
 }
 
+figure {
+	padding: 15px;
+	width: 35%;
+	float: right;
+}
+
+figure img {
+	width: 100%;
+	height: auto;
+}
 
 
 /* Biography
 -------------------------- */
 
-figure {
+/* figure {
 	float: right;
 	box-shadow: 2px 2px 5px black;
 	margin-right: 10px;
@@ -65,11 +78,7 @@ figure {
 
 figcaption {
 	text-align: center;
-}
-
-p {
-	padding: 15px;
-}
+} */
 
 /* Examples
 -------------------------- */

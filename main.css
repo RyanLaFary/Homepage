@@ -11,23 +11,16 @@ Author: Ryan LaFary
 
 body {
 	font-family: serif;
-	background-color: grey;
+	background-color: #808080;
 }
 
 #wrapper {
 	border: 15px;
-	padding: 20px;
-	box-shadow: 5px 5px 15px black;
+	background-color: #ccc;
+	box-shadow: 5px 5px 15px #000;
 	max-width: 1140px;
 	width: 100%;
 	margin: 0 auto;
-}
-
-div {
-    background-color: lightgrey;
-    border: 25px;
-    /* padding: 25px; */
-    /* margin: 25px; */
 }
 
 /* Header
@@ -47,12 +40,6 @@ header h2 {
 /* Main Article
 -------------------------- */
 
-main {
-	background-color: blue;
-	margin: 15px;
-	overflow: hidden;
-}
-
 figure {
 	padding: 15px;
 	width: 35%;
@@ -67,22 +54,23 @@ figure img {
 
 /* Biography
 -------------------------- */
-
-/* figure {
-	float: right;
-	box-shadow: 2px 2px 5px black;
-	margin-right: 10px;
-	padding: 5px;
-	margin-left: 20px;
+.bio {
+	padding: 15px;
 }
-
-figcaption {
-	text-align: center;
-} */
 
 /* Examples
 -------------------------- */
 
+.section-group {
+	background: #c1c1c1;
+	padding: 15px 30px;
+	border-radius: 2px;
+	margin-bottom: 15px;
+}
+
+.section-group h2 {
+	margin-top: 5px;
+}
 
 .examples {
 	text-decoration: none;
@@ -124,7 +112,7 @@ a[href^="mailto"] {
 	background-image: url(icon_mail.gif);
 	background-repeat: no-repeat;
 	background-position: center left;
-	padding-left: 20px;
+}
 
 /* Tools
 -------------------------- */
